@@ -1,0 +1,64 @@
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.nonGraph {
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}
+.btnVPR {
+  background-color: rgb(149, 153, 166);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
+.divLogoBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 1rem;
+  padding-inline: 0rem;
+}
+.btnPPTS {
+  height: 100%;
+  border-radius: 100%;
+  background-color: rgb(246, 184, 1);
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+}
+.btnCSV-EPD {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  height: 5rem;
+  border: none;
+}
+.btnCSV {
+  background-color: #4717ca;
+}
+.btnEPD {
+  background-color: rgb(21, 201, 176);
+}
+.btnCSV,
+.btnEPD {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  padding: 0.8rem;
+  height: 100%;
+}
+.green {
+  background-color: rgb(107, 209, 84);
+}
