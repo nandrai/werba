@@ -8,7 +8,11 @@ const NonGraphSection = () => {
 
       <div className="nonGraph divLogoBtn">
         <div className="userProfilePicture"></div>
-        <button className="btnPPTS btn btnRadi">Push Product to Shopify</button>
+        <a href="/addProducts">
+          <button className="btnPPTS btn btnRadi">
+            Push Product to Shopify
+          </button>
+        </a>
         <div className="userProfilePicture green"></div>
       </div>
 

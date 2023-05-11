@@ -47,7 +47,7 @@ const GraphSection = () => {
             <AttachedGraph height={"250px"} width={"120px"} />
           </div>
           <div className="g multiDoughnutGraph">
-            <DoughnutGraph style={{ backgroundColor: "pink" }} />
+            <DoughnutGraph />
           </div>
         </div>
         <div className="g graphBarChartHorizontal">
