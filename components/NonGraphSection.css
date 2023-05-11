@@ -14,7 +14,11 @@
   margin: 0.5rem auto;
 }
 a {
-  width: 100%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btnVPR {
   background-color: rgb(149, 153, 166);

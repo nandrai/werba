@@ -4,13 +4,15 @@ import ProductList from "./ProductList/ProductList";
 const NonGraphSection = () => {
   return (
     <div className="leftSidebar">
-      <a href="/addProducts">
-        <button className="nonGraph btn btnVPR">View Pricing Report</button>
-      </a>
+      <button className="nonGraph btn btnVPR">View Pricing Report</button>
 
       <div className="nonGraph divLogoBtn">
         <div className="userProfilePicture"></div>
-        <button className="btnPPTS btn btnRadi">Push Product to Shopify</button>
+        <a href="/addProducts">
+          <button className="btnPPTS btn btnRadi">
+            Push Product to Shopify
+          </button>
+        </a>
         <div className="userProfilePicture green"></div>
       </div>
 

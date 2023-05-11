@@ -28,7 +28,7 @@ body {
     linear-gradient(336deg, rgba(46, 46, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 .boxBody {
-  padding: 0rem 3rem;
+  padding: 0rem 3rem 2rem 3rem;
 }
 .btnBox {
   display: flex;

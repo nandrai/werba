@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "./ProductPage.css";
 import { CssBaseline, Button, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -10,18 +9,21 @@ const CustomCheckbox = styled(TextField)(() => ({
 }));
 
 const ProductPage = () => {
-  const [inputBoxes, setInputBoxes] = useState(1);
+  const [inputBoxesCount, setInputBoxesCount] = useState(0);
 
+  const uploadAll = () => {
+    // You can add your API logic here
+  };
   const addInputBoxes = () => {
-    setInputBoxes(inputBoxes + 1);
+    setInputBoxesCount(inputBoxesCount + 1);
   };
 
   const renderInputBoxes = () => {
     const arr = [];
-    for (let i = 0; i < inputBoxes; i++) {
+    for (let i = 0; i < inputBoxesCount; i++) {
       arr.push(
         <div key={i} className="productInputs">
-          <h2 className="productHeading">Please fill the Fields</h2>
+          <h2 className="productHeading">Please fill the Fields for Product</h2>
           <CustomCheckbox
             id="handleInput"
             label="Handle"
@@ -64,6 +66,72 @@ const ProductPage = () => {
             variant="standard"
             required={false}
           />
+          <CustomCheckbox
+            className="imageInput"
+            label="Product Image Link 4"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="vendor"
+            label="Vendor"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="published"
+            label="Published"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientIQ"
+            label="Variant Inventory Quantity"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientIP"
+            label="Variant Inventory Policy"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientFS"
+            label="Variant Fulfillment Service"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientP"
+            label="Variant Price"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientRS"
+            label="Variant Requires Shipping"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientT"
+            label="Variant Taxable"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientG"
+            label="Variant Grams"
+            variant="standard"
+            required={false}
+          />
+          <CustomCheckbox
+            className="varientWU"
+            label="Variant Weight Unit"
+            variant="standard"
+            required={false}
+          />
         </div>
       );
       console.log(arr);
@@ -80,15 +148,12 @@ const ProductPage = () => {
           <Button variant="contained" onClick={addInputBoxes} className="btn">
             Add Product
           </Button>
-          <Button variant="contained" className="btn">
+          <Button variant="contained" onClick={uploadAll} className="btn">
             Upload All
           </Button>
         </div>
         <div className="line"></div>
-        <div className="addedProductList">
-          {/* Make the below fragment looped */}
-          {renderInputBoxes()}
-        </div>
+        <div className="addedProductList">{renderInputBoxes()}</div>
       </div>
     </div>
   );
